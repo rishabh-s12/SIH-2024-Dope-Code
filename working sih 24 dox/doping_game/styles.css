@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #240750, #57A6A1, #577B8D);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card {
+    background: linear-gradient(300deg, #40A578, #9DDE8B, #006769);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    /* opacity: 0; Initially hidden */
+    transform: translateY(20px); /* Positioned slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.hidden {
+    display: none;
+}
+
+.choice-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #240750;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.choice-button:hover {
+    background-color: #57A6A1;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background-color: #240750;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.card.show {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to original position */
+}

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Quiz App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="app">
+        <h1>Doping Quiz</h1>
+        <div class="quiz">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <div class="progress-indicator" id="progress-indicator">Question 1 of 10</div>
+            <div class="timer" id="timer">Time: 0s</div>
+            <h2 id="question">Question Goes Here</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button id="next-btn" class="next-btn">Next</button>
+        </div>
+    </div>
+
+    <audio id="correct-sound" src="./ding-correct-gfx-sounds-1-00-02.mp3" preload="auto"></audio>
+    <audio id="incorrect-sound" src="./buzzer-buzzing-single-fascinatedsound-2-00-01.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

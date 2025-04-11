@@ -1,0 +1,288 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #8a999b;
+}
+
+.app{
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin:100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5% ;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.btn:hover:not([disabled]){
+    background-color: #222;
+    color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background-color: #9aeabc;
+}
+.incorrect{
+    background-color: #ff9393;
+}
+/* Timer styles */
+/* .timer {
+    font-size: 16px;
+    color: #ff4d4d;
+    text-align: right;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* Animation styles */
+/*
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease-out;
+} 
+*/
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #094047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app {
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 0;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in;
+}
+.app h1 {
+    font-size: 28px;
+    color: #001e4d;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.quiz {
+    padding: 20px 0;
+    position: relative;
+}
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50;
+    transition: width 0.5s ease-in-out;
+}
+.progress-indicator {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+.timer {
+    font-size: 16px;
+    color: #ff4d4d;
+    text-align: right;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.quiz h2 {
+    font-size: 20px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-bottom: 20px;
+    min-height: 60px;
+    transition: all 0.3s ease-in-out;
+}
+#answer-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 2px solid #222;
+    padding: 12px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+.btn:hover:not([disabled]) {
+    background-color: #222;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn:active:not([disabled]) {
+    transform: translateY(0);
+    box-shadow: none;
+}
+.btn.correct {
+    background-color: #9aeabc;
+    border-color: #4caf50;
+    color: #fff;
+    animation: correctPulse 0.5s;
+}
+.btn.incorrect {
+    background-color: #ff9393;
+    border-color: #f44336;
+    color: #fff;
+    animation: incorrectPulse 0.5s;
+}
+.btn.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.next-btn {
+    background-color: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 20px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: none;
+}
+.next-btn:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+}
+.next-btn:active {
+    transform: translateY(0);
+}
+.next-btn.play-again {
+    background-color: #4caf50;
+}
+.next-btn.play-again:hover {
+    background-color: #45a049;
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes fadeOut {
+    from { opacity: 1; transform: scale(1); }
+    to { opacity: 0; transform: scale(0.95); }
+}
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+@keyframes slideOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-100%); opacity: 0; }
+}
+@keyframes correctPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+@keyframes incorrectPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .app {
+        padding: 20px;
+    }
+    .quiz h2 {
+        font-size: 18px;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .next-btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+}

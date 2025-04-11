@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doping Awareness Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gradient-background">
+    <div class="stats-container">
+        <div id="health" class="stat">Health: 40</div>
+        <div id="performance" class="stat">Performance: 40</div>
+        <div id="reputation" class="stat">Reputation: 40</div>
+    </div>
+    <div id="start-card" class="card">
+        <p>Are you ready to start your career as an athlete?</p>
+        <button id="yes-start-button" class="choice-button">Yes</button>
+        <button id="no-start-button" class="choice-button">No</button>
+    </div>
+
+    <div id="bootcamp-card" class="card hidden">
+        <p>You wake up in the football bootcamp and find yourself in a cardio session. The coach asks you to run 2 miles. Will you do it?</p>
+        <button id="yes-bootcamp-button" class="choice-button">Yes</button>
+        <button id="no-bootcamp-button" class="choice-button">No</button>
+    </div>
+    <div id="noRunpushup-card" class="card hidden">
+        <p>After your teammates came back from the run your coach asks you to do 100 pushups. Will you do it?</p>
+        <button id="yes-noRunpushup-button" class="choice-button">Yes</button>
+        <button id="no-noRunpushup-button" class="choice-button">No</button>
+    </div>
+
+    <div id="pushup-card" class="card hidden">
+        <p>After you came back from the run, your coach asks you to do 100 pushups. Will you do it?</p>
+        <button id="yes-pushup-button" class="choice-button">Yes</button>
+        <button id="no-pushup-button" class="choice-button">No</button>
+    </div>
+    <div id="match-card" class="card hidden">
+        <p>Now its Match Time, The coach has asked you to play mid fielder despite your natural position being a striker, will you rebel against this decision?</p>
+        <button id="yes-match-button" class="choice-button">Yes</button>
+        <button id="no-match-button" class="choice-button">No</button>
+    </div>
+    <div id="striker-card" class="card hidden">
+        <p>The coach seemed unhappy with the rebellion however he did allow you to play striker. as you were dribbling the ball you came face to face with the keeper but you see your partner on your side asking for a clear cross, do you wish to pass him the ball?</p>
+        <button id="yes-striker-button" class="choice-button">Yes</button>
+        <button id="no-striker-button" class="choice-button">No</button>
+    </div>
+    <div id="goal-card" class="card hidden">
+        <p>You chose to do dribble the ball yourself and take a very risky shoot, and you scored! however your teammates were cross on the lack of sportsmanship. Click Yes to continue playing</p>
+        <button id="yes-goal-button" class="choice-button">Yes</button>
+        <button id="no-goal-button" class="choice-button">No</button>
+    </div>
+    <div id="pass-card" class="card hidden">
+        <p>you chose to pass the ball to your teammate who very easily scored a goal, your teammates celebrated your assist. Click Yes to continue playing</p>
+        <button id="yes-pass-button" class="choice-button">Yes</button>
+        <button id="no-pass-button" class="choice-button">No</button>
+    </div>
+    <div id="mid-card" class="card hidden">
+        <p>You chose to follow your coach's wisdom and play mid fielder. While playing you saw your opponent's team member dribble the ball towards your direction, do you wish to give him a slide tackle?</p>
+        <button id="yes-mid-button" class="choice-button">Yes</button>
+        <button id="no-mid-button" class="choice-button">No</button>
+    </div>
+    <div id="slide-card" class="card hidden">
+        <p>You chose to give him a slide tackle however you didn't time it right and ended up injuring the other player, the ref gave you a yellow card for this and your coach decided to subsitute you. Click Yes to go to the stands</p>
+        <button id="yes-slide-button" class="choice-button">Yes</button>
+        <button id="no-slide-button" class="choice-button">No</button>
+    </div>
+    <div id="shoulder-card" class="card hidden">
+        <p>you chose not to give him a slide tackle instead gave him the shoulder, you were successfully able to take the ball and pass it onto the striker. Click Yes to continue playing</p>
+        <button id="yes-shoulder-button" class="choice-button">Yes</button>
+        <button id="no-shoulder-button" class="choice-button">No</button>
+    </div>
+    <div id="subsi-card" class="card hidden">
+        <p>You were subsituted for the rest of the match. Click Yes to continue</p>
+        <button id="yes-subsi-button" class="choice-button">Yes</button>
+        <button id="no-subsi-button" class="choice-button">No</button>
+    </div>
+    <div id="injury-card" class="card hidden">
+        <p>The game continues,the ball was just passed to you, seeing this the opponent teammate decided to give you a harsh slide tackle and you fell. He got a yellow can and you got a bruise to your knee. Do you wish to seek medical attention?</p>
+        <button id="yes-injury-button" class="choice-button">Yes</button>
+        <button id="no-injury-button" class="choice-button">No</button>
+    </div>
+    <div id="sitout-card" class="card hidden">
+        <p>You Decided to sitout and heal your injury, your teammates considered you a crybaby for not playing. Continue?</p>
+        <button id="yes-sitout-button" class="choice-button">Yes</button>
+        <button id="no-sitout-button" class="choice-button">No</button>
+    </div>
+    <div id="continuePlay-card" class="card hidden">
+        <p>You continued to Play and your teammates cheered you on for it, however your injury got worse and took a toll on your health and body. Continue?</p>
+        <button id="yes-continuePlay-button" class="choice-button">Yes</button>
+        <button id="no-continuePlay-button" class="choice-button">No</button>
+    </div>
+    <div id="command-card" class="card hidden">
+        <p>After the Match the Coach lines you up and gives you intructions about the upcoming national team selection event. He tells you that your performance must be above 75 to qualify, If at anytime your health goes below 10 you will be hospitalised and if your reputation reached 0 you will be kicked out of the team. Are you up for the challenge? </p>
+        <button id="yes-command-button" class="choice-button">Yes</button>
+        <button id="no-command-button" class="choice-button">No</button>
+    </div>
+    <div id="train-card" class="card hidden">
+        <p>You decide to train today but you still have injuries from the match yesterday. Will you go to the gym or not? </p>
+        <button id="yes-train-button" class="choice-button">Yes</button>
+        <button id="no-train-button" class="choice-button">No</button>
+    </div>
+    <div id="donut-card" class="card hidden">
+        <p>Your friend offers you a donut which he knows you really like, will you take it?</p>
+        <button id="yes-donut-button" class="choice-button">Yes</button>
+        <button id="no-donut-button" class="choice-button">No</button>
+    </div>
+    <div id="newTrain-card" class="card hidden">
+        <p>New Day, New Gym Session. Wanna go? </p>
+        <button id="yes-newTrain-button" class="choice-button">Yes</button>
+        <button id="no-newTrain-button" class="choice-button">No</button>
+    </div>
+    <div id="newTrain-card" class="card hidden">
+        <p>New Day, New Gym Session. Wanna go? </p>
+        <button id="yes-newTrain-button" class="choice-button">Yes</button>
+        <button id="no-newTrain-button" class="choice-button">No</button>
+    </div>
+    <div id="Rest-card" class="card hidden">
+        <p>Your Coach has declared it a rest day for the team, Do you want to take it? </p>
+        <button id="yes-Rest-button" class="choice-button">Yes</button>
+        <button id="no-Rest-button" class="choice-button">No</button>
+    </div>
+
+    <div id="newTraining-card" class="card hidden">
+        <p>Your Coach has called everyone for a friendly match, participate?</p>
+        <button id="yes-newTraining-button" class="choice-button">Yes</button>
+        <button id="no-newTraining-button" class="choice-button">No</button>
+    </div>
+    <div id="Party-card" class="card hidden">
+        <p>After the match your teammates invite you to a party they are hosting tonight and it seems it will be alot of fun, but you probably won't be able to train the next day, will you go?</p>
+        <button id="yes-Party-button" class="choice-button">Yes</button>
+        <button id="no-Party-button" class="choice-button">No</button>
+    </div>
+    <div id="yesParty-card" class="card hidden">
+        <p>Your coach found out about the party the next day and gave you a strict punishment, you won't be allowed to train for the week. Continue?</p>
+        <button id="yes-yesParty-button" class="choice-button">Yes</button>
+        <button id="no-yesParty-button" class="choice-button">No</button>
+    </div>
+    <div id="noParty-card" class="card hidden">
+        <p>Your Coach found out about the party and punished your teammates by barring them from training for a week, He however appriciated you. Continue?</p>
+
+        <button id="yes-noParty-button" class="choice-button">Yes</button>
+        <button id="no-noParty-button" class="choice-button">No</button>
+    </div>
+    <div id="apple-card" class="card hidden">
+        <p>your friend offers you an apple saying its good for your health, take it?</p>
+
+        <button id="yes-apple-button" class="choice-button">Yes</button>
+        <button id="no-apple-button" class="choice-button">No</button>
+    </div>
+    <div id="hardTrain-card" class="card hidden">
+        <p>The Selections are coming up in a week. Train Harder?</p>
+
+        <button id="yes-hardTrain-button" class="choice-button">Yes</button>
+        <button id="no-hardTrain-button" class="choice-button">No</button>
+    </div>
+    <div id="dissapointed-card" class="card hidden">
+        <p>You trained as hard and as rigorously as possible, however you are scared that you won't be able to hit the mark and get selected this Sunday, With this Thought you end Thursday's practise, you head towards the locker room . Go Ahead?</p>
+        <button id="yes-dissapointed-button" class="choice-button">Yes</button>
+        <button id="no-dissapointed-button" class="choice-button">No</button>
+    </div>
+    <div id="lockerRoom-card" class="card hidden">
+        <p>You are expressing your concerns in the lockerRoom after practise that you might not be able to hit the mark for team selection. Your Coach's assistant overhears this and later comes to you offering a quick fix to your problems. He tells by taking a drug course you can hit the mark in 3 days. Do you Take it?</p>
+        <button id="yes-lockerRoom-button" class="choice-button">Yes</button>
+        <button id="no-lockerRoom-button" class="choice-button">No</button>
+    </div>
+    <div id="Effect-card" class="card hidden">
+        <p>You took the performance Enhancing drugs and all of sudden you felt like you could do anything with your body, with this confident you went in for the play. Go give the trial</p>
+        <button id="yes-Effect-button" class="choice-button">Yes</button>
+        <button id="no-Effect-button" class="choice-button">No</button>
+    </div>
+    <div id="dopedResult-card" class="card hidden">
+        <p>You gave the trials and you got selected! but only a few days after taking the drugs you felt your health detoriate, a month went by and you kept taking those drugs,Click Yes to continue</p>
+        <button id="yes-dopedResult-button" class="choice-button">Yes</button>
+        <button id="no-dopedResult-button" class="choice-button">No</button>
+    </div>
+    <div id="dopedMonth-card" class="card hidden">
+        <p>one day your kidney failed and you had to be rushed to the hospital, there it was revealed you were doping, you were immediately kicked from the football team and had to stay in the hospital for a long time,Click any button to finish</p>
+        <button id="yes-dopedMonth-button" class="choice-button">Yes</button>
+        <button id="no-dopedMonth-button" class="choice-button">No</button>
+    </div>
+    <div id="NoEffect-card" class="card hidden">
+        <p>You decided not to take any drugs and rather put your faith into your hardwork and dedication,you went ahead to give the trial, click yes to give the trial</p>
+        <button id="yes-NoEffect-button" class="choice-button">Yes</button>
+        <button id="no-NoEffect-button" class="choice-button">No</button>
+    </div>
+    <div id="realResult-card" class="card hidden">
+        <p>You unfortunately did not make it into the playing XI, however to reward your hardwork your coach made you a subsitute in the main team. Click yes to continue</p>
+        <button id="yes-realResult-button" class="choice-button">Yes</button>
+        <button id="no-realResult-button" class="choice-button">No</button>
+    </div>
+    <div id="realMonth-card" class="card hidden">
+        <p>One month later it was found out that one of the players was doping, he was immediately kicked off from the team and you were asked to take his place,Click any button to finish</p>
+        <button id="yes-realMonth-button" class="choice-button">Yes</button>
+        <button id="no-realMonth-button" class="choice-button">No</button>
+    </div>
+
+    <div id="game-over-card" class="card hidden">
+        <p id="game-over-message"></p>
+        <button id="restart-button" class="choice-button">Restart</button>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
