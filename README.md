@@ -4,11 +4,11 @@ Champions Without Doping is an awareness-driven, interactive website designed to
 
 ## Features
 
-- 🎮 **Interactive Games** – Learn about doping facts and myths through fun, educational games.
-- 💬 **AI-Powered Chatbox** – Ask questions and receive instant, informative responses on anti-doping topics.
-- 🌐 **Multilingual Tools** – Access content in multiple languages to ensure inclusivity and wider reach.
-- 🌍 **Global Doping Report** – Visualize and explore doping statistics from around the world.
-- 🧠 **Educational Resources** – Infographics, FAQs, and facts to build awareness and prevent misuse.
+-  **Interactive Games** – Learn about doping facts and myths through fun, educational games.
+-  **AI-Powered Chatbox** – Ask questions and receive instant, informative responses on anti-doping topics.
+-  **Multilingual Tools** – Access content in multiple languages to ensure inclusivity and wider reach.
+-  **Global Doping Report** – Visualize and explore doping statistics from around the world.
+-  **Educational Resources** – Infographics, FAQs, and facts to build awareness and prevent misuse.
 
 ## Tech Stack
 
